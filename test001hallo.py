@@ -1,5 +1,5 @@
 print("Hallo")
-print("Welt 12:40")
+print("Welt 12:45")
 for i in range(10,29):
     print (i,end='-')
 while i > 4:
