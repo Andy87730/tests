@@ -11,11 +11,11 @@ if __name__ == "__main__":
     path = "P:/Dokument/3"
     event_handler = LoggingEventHandler()
     observer = Observer()
-    observer.schedule(event_handler, path, recursive=True)
+    observer.schedule(event_handler, path, recursive=False)
     observer.start()
     try:
         while True:
-            time.sleep(1)
+            time.sleep(3600)
     except KeyboardInterrupt:
         observer.stop()
-    observer.join()
+        observer.join()  #einrücken oder links ?
