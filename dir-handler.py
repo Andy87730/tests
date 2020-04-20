@@ -15,7 +15,11 @@ if __name__ == "__main__":
     observer.start()
     try:
         while True:
-            time.sleep(3600)
+            print("wach")
+            time.sleep(1)
+            print("schlafe")
     except KeyboardInterrupt:
         observer.stop()
-        observer.join()  #einrücken oder links ?
+        print("stopped")
+    observer.join()  #einrücken oder links ?
+    print("joined")
